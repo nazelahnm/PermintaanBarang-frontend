@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.active {
+  @apply bg-[#d9d9d9] rounded-xl font-semibold;
+}
+
+/* Untuk elemen scroll vertikal */
+::-webkit-scrollbar {
+  width: 8px; /* Atur lebar scroll */
+}
+
+/* Untuk elemen scroll horizontal */
+::-webkit-scrollbar {
+  height: 8px; /* Atur tinggi scroll */
+}
+/* Untuk scroll thumb (bagian yang bisa digeser) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Warna scroll thumb */
+  border-radius: 5px; /* Atur sudut lengkung scroll thumb */
+}
+
+/* Untuk scroll track (bagian latar belakang) */
+::-webkit-scrollbar-track {
+
+}
+
+@keyframes slideInBounce {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
